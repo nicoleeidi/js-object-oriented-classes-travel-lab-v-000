@@ -18,10 +18,10 @@ class Route {
   }
   blocksTravelled(){
 
-    let startavenue= this.avenueToInteger(this.beginningLocation.vertical)
-    let endavenue= this.avenueToInteger(this.endingLocation.vertical)
+    let startavenue= this.avenueToInteger(this.beginningLocation.horizontal)
+    let endavenue= this.avenueToInteger(this.endingLocation.horizontal)
 
-    let distance1= Math.abs(this.beginningLocation.horizontal - this.endingLocation.horizontal)
+    let distance1= Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
     let distance2= Math.abs(startavenue - endavenue)
     return distance1 + distance2
   }
